@@ -9,7 +9,7 @@ Built using Fedora 28 Server
 
 Directorys required for running the script
 
-The script in currently being run from /var/lib/plexmediaserver/Scripts. To use 	the file as written please create 	the Scripts folder in the plexmediaserver 	folder and then edit the file and change the below three entries to path in 	your 	environment.
+The script in currently being run from /var/lib/plexmediaserver/Scripts. To use the file as written please create the Scripts folder in the plexmediaserver folder and then edit the file and change the below three entries to path in your environment.
 
 	-TEMPDVRPATH (Default:/DataDrive/Video/TEMPDVR)
 	-ARCHIVETSDIR (Default:/DataDrive/Video/DVRArchive)
@@ -21,9 +21,9 @@ The script in currently being run from /var/lib/plexmediaserver/Scripts. To use 
 	ARCHIVELENGTH=4 # Set to the number of days to keep archived TS files
 	LOGFILEAGE=7 #number is days
 
-By seting ARCHIVEYES to FALSE you can skip the archive directory path if you dont 	require that ability.
+By seting ARCHIVEYES to FALSE you can skip the archive directory path if you dont require that ability.
 	 
-As the TS files can be ery large set the archive length for number of days to 	make sure this directory doesnt fill up its drive
+As the TS files can be ery large set the archive length for number of days to make sure this directory doesnt fill up its drive
 
 
 
@@ -41,7 +41,7 @@ As the TS files can be ery large set the archive length for number of days to 	m
 	$1 is the file to process
 
 -Reading the log files-
-	The LOG file writes logs by date and by default keeps the last 7 days. As multiple scripts can be running at one time its possible the logs will have entries from different jobs that are happening at the same time. To keep track of which log entries a JOBNUM was added to each line. The JOBNUM will stay unique for the script process. At this time there is no LOGS from handbrake itself as during its processing it spams the console with encoding messages and creates a mess. If you are having issues with Handbrake look at the system journal. Also running the script in CLI mode will show you the handbrake output if some diagnostics is needed.
+The LOG file writes logs by date and by default keeps the last 7 days. As multiple scripts can be running at one time its possible the logs will have entries from different jobs that are happening at the same time. To keep track of which log entries a JOBNUM was added to each line. The JOBNUM will stay unique for the script process. At this time there is no LOGS from handbrake itself as during its processing it spams the console with encoding messages and creates a mess. If you are having issues with Handbrake look at the system journal. Also running the script in CLI mode will show you the handbrake output if some diagnostics is needed.
 
 -Handbrake Options-
 Everyone's preferences are differnet here so modify the CLI code as needed for Plex. If no changes are made it uses H264 with Quality setting of 23 and 160Kb 2 channel audio in AAC as this is the most universal audio codecs for direct play.
