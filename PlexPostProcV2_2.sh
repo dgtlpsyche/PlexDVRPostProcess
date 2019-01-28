@@ -7,8 +7,12 @@
 #****************************************************************************** 
 #  
 #  Version: 2.2
+#	Date: 1-28-2019
 #
+#  Creator and Support Information
 #  Written by: Dgtlpsyche
+#  Email: Dgtlpsyche@gmail.com
+#  https://github.com/dgtlpsyche
 #
 #  Pre-requisites: 
 #     HandBrakeCLI
@@ -17,7 +21,8 @@
 #  Usage: 
 #     'PlexPostProc.sh %1'
 #
-#  Description:
+#  Description: See Github page for More Details
+#  https://github.com/dgtlpsyche/PlexDVRPostProcess
 #
 #****************************************************************************** 
 
