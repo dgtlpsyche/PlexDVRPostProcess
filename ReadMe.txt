@@ -7,7 +7,7 @@ After working with Plex DVR and the file size for MPEG was so large this script 
 --Installing--
 Built using Fedora 28 Server
 
-Directorys required for running the script
+Directories required for running the script
 
 The script in currently being run from /var/lib/plexmediaserver/Scripts. To use the file as written please create the Scripts folder in the plexmediaserver folder and then edit the file and change the below three entries to path in your environment.
 
