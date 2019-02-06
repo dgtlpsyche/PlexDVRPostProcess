@@ -49,9 +49,9 @@ Everyone's preferences are differnet here so modify the CLI code as needed for P
 Future
 Looking to add these features in no order.
 
--Orig file size vs transcoded size with %
+-Orig file size vs transcoded size with % //Added in V2.31
 -LOG entries to note if other instances of Handbrake are currently running and how many
--Error handling of some commands
+-Error handling of some commands % //Basic Operation added in V2.31
 -For 1080(HD files) add option to change the codec to H265 but leave SD content with H264
 
 
@@ -62,6 +62,12 @@ https://github.com/dgtlpsyche
 
 
 Release History
+2.31
+	-A few bug fixes and spelling fixes
+	-Updated syntax for some commands
+	-Added Command Success check
+	-Added Log entries for Original File Size and Final File Size and calculated % reduction
+	-General Clean-up of the log entries order
 2.2
 	-First Release
 
