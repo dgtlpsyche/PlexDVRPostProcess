@@ -62,6 +62,10 @@ https://github.com/dgtlpsyche
 
 
 Release History
+2.32
+	-added a LD_LIBRARY_PATH command to add /lib/lib64 to the search for libz.so.1(See Addtl Notes Doc for more details) 
+
+
 2.31
 	-A few bug fixes and spelling fixes
 	-Updated syntax for some commands
