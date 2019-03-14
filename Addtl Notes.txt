@@ -1,0 +1,17 @@
+
+ERROR: libz.so.1 not found error for HandBrakeCLI
+ERROR: Post Process Script LOG Transcoded File Size is 0 MiB and/or Transcoded File Size is 0 MiB
+ERROR: Cleanup process in LOG states mv: cannot stat '<pathtoyourtempdir>/1552368830.mkv': No such file or directory with the following entry COMMAND FAILED!
+   Known OSs Affected: Fedora 27,28,29
+   Symptom:
+      HandBrakeCLI does not run when used via plexpostprocess and produced a null file. This log is one that is seen in the journal log:
+      "HandBrakeCLI: /usr/lib/plexmediaserver/libz.so.1: version `ZLIB_1.2.9' not found (required by /lib64/libpng16.so.16)"
+
+        TEMPFIX without upgrading script to 2.32
+            cd /usr/lib/plexmediaserver/
+            mv libxml2.so.2 libxml2.so.2.bakXXXXXXXX
+            mv libz.so.1 libz.so.1.bakXXXXXXXX
+            ln -s /usr/lib64/libxml2.so.2 libxml2.so.2
+            ln -s /usr/lib64/libz.so.1 libz.so.1
+
+            *where XXXXXXXX should be replaced with todays date ex 03142019 
