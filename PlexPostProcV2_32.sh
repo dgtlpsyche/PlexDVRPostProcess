@@ -136,7 +136,7 @@ if [ ! -z "$FILETOPROCESS" ]; then
   #Add System Path for LIB Files due to Handbrake error missing libz.so.1 because the one in Plex's lib file doesnt work with Handbrake 
    echolog "JOB|$JOBNUM|--LD LIBRARY PATH ORIGINAL: $LD_LIBRARY_PATH"
    ORIGLDLIBRARYPATH=$LD_LIBRARY_PATH
-   export LD_LIBRARY_PATH="/lib/lib64:$ORIGLDLIBRARYPATH"
+   export LD_LIBRARY_PATH="/usr/lib64:$ORIGLDLIBRARYPATH"
    echolog "JOB|$JOBNUM|--New LD LIBRARY PATH: $LD_LIBRARY_PATH"
    echolog "JOB|$JOBNUM|--THIS IS WHAT WILL BE PROCESSED ON HANDBRAKE LINE" 
 
